@@ -22,7 +22,7 @@ h1 {
     font-family: "Exo";
     font-size: 3rem;
     font-weight: 400;
-    color: #F2865E;
+    color: #CCD96C;
     padding: 1rem 0;
 }
 
@@ -36,22 +36,19 @@ h2 {
 
 a {
     text-decoration: none;
-    color: #5D6C8C;
-}
-
-a:hover {
-    color: #CCD96C;
+    color: #F2865E;
 }
 
 .container {
     width: 60%;
     max-width: 1200px;
     margin: 0 auto;
-    min-height: 300px;
+    min-height: 200px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 2rem;
     padding-bottom: 1rem;
 
 }
@@ -76,12 +73,22 @@ header {
 
 /* Projectern */
 
+.project {
+    border: 0.5px solid black;
+    padding-top: 1rem;
+}
+
+.project:hover {
+    position: relative;
+    top: -5px;
+}
+
 #projecten {
     background-color: #F2E49B;
     width: 100%;
 }
 
-#projecten ul {
+#projecten .projecten {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -92,9 +99,9 @@ header {
 }
 
 
-#projecten li{
+#projecten .project{
     list-style: none;
-    min-width: 230px;
+    min-width: 300px;
     flex: 1 1;
 }
 
@@ -103,15 +110,15 @@ header {
     aspect-ratio: 3 / 2;
     overflow: scroll;
     margin-top: 1rem;
-    transition: all 200ms ease-in 10ms;
+    border-top: 0.5px solid #000000;
+    /* transition: all 200ms ease-in 10ms; */
 }
 
-#projecten .image:hover {
-    /* border: 3px solid #CCD96C; */
+/* #projecten .image:hover {
     box-shadow: 0px 0px 25px #5D6C8C;
-}
+} */
 
-#projecten li img {
+#projecten .project img {
     width: 100%;
 }
 
@@ -121,6 +128,7 @@ header {
 
 #projecten a {
     font-size: 1.5rem;
+    color: #5D6C8C;
 }
 
 #projecten .container {
@@ -137,7 +145,16 @@ footer {
 }
 
 @media only screen and (max-width: 468px) {
-    #projecten li {
+    #projecten .project {
         min-width: 150px;
     }
+
+    .container {
+        min-height: 300px;
+    }
+
+    #projecten a {
+        font-size: 1rem;
+    }
+
 }
