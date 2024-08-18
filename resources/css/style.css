@@ -92,8 +92,7 @@ header {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    flex-direction: row-reverse;
-    flex-wrap: wrap-reverse;
+    flex-wrap: wrap;
     gap: 2rem;
     padding: 2rem 0;
 }
@@ -102,7 +101,7 @@ header {
 #projecten .project{
     list-style: none;
     min-width: 300px;
-    flex: 1 1;
+    flex: 0 1;
 }
 
 #projecten .image {
