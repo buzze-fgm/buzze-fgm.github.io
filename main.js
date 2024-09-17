@@ -1,37 +1,4 @@
-let titleHowest = document.getElementById("howestTitle");
-let titleCodecademy = document.getElementById("codecademyTitle");
-let projectHowest = document.getElementById("howestProjects");
-let projectCodecademy = document.getElementById("codecademyProjects");
 
-projectHowest.style.display = "none";
-titleHowest.querySelector("i").classList.add('bi-caret-right');
-projectCodecademy.style.display = "flex";
-titleCodecademy.querySelector("i").classList.add('bi-caret-down');
-
-
-function changeIcon(anchor) {
-    let icon = anchor.querySelector("i");
-    icon.classList.toggle('bi-caret-down');
-    icon.classList.toggle('bi-caret-right');
-  };
-
-titleHowest.onclick = function () {
-    if (projectHowest.style.display === "none") {
-        projectHowest.style.display = "flex";
-    } else {
-        projectHowest.style.display = "none";
-    }
-    changeIcon(titleHowest);
-};
-
-titleCodecademy.onclick = function () {    
-    if (projectCodecademy.style.display === "none") {
-        projectCodecademy.style.display = "flex";
-    } else {
-        projectCodecademy.style.display = "none";
-    }
-    changeIcon(titleCodecademy);
-};
 
 // Change theme with button
 
@@ -81,3 +48,36 @@ function changeTheme() {
 };
 
 document.querySelector('button').onclick = changeTheme;
+
+
+// responsive menu button
+
+function showMenu() {
+    let menu1 = document.getElementById("navLeft");
+    let menu2 = document.getElementById("navRight");
+    let menuIcon1 = document.getElementById("menuButton");
+    let menuIcon2 = document.getElementById("menuX");
+
+    menu1.style.display = "block";
+    menu2.style.display = "block";
+    menuIcon1.style.display = "none";
+    menuIcon2.style.display = "block";
+}
+
+function closeMenu() {
+    let menu1 = document.getElementById("navLeft");
+    let menu2 = document.getElementById("navRight");
+    let menuIcon1 = document.getElementById("menuButton");
+    let menuIcon2 = document.getElementById("menuX");
+
+    menu1.style.display = "none";
+    menu2.style.display = "none";
+    menuIcon1.style.display = "block";
+    menuIcon2.style.display = "none";
+}
+
+
+let openEl = document.getElementById("menuButton");
+openEl.onclick = showMenu;
+let closeEl = document.getElementById("menuX");
+closeEl.onclick = closeMenu;

@@ -147,6 +147,21 @@ header nav a:hover {
     color:#F2E49B;
 }
 
+header i {
+    font-size: 3rem;
+    order: 0;
+}
+
+#menuButton {
+    display: none;
+    cursor: pointer;
+}
+
+#menuX {
+    display: none;
+    cursor: pointer;
+}
+
 /* about */
 
 #about p {
@@ -232,7 +247,7 @@ header nav a:hover {
 #projecten .projecten {
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
     gap: 2rem;
     padding: 2rem 0;
@@ -240,8 +255,8 @@ header nav a:hover {
 
 #projecten .project{
     list-style: none;
-    min-width: 400px;
-    flex: 1 1;
+    min-width: 300px;
+    flex: 0 1;
 }
 
 #projecten .image {
@@ -311,19 +326,100 @@ footer button:active {
     left: 0px;
 }
 
-@media only screen and (max-width: 1410px) {
+@media only screen and (max-width: 1630px) {
+    
     #projecten .project {
-        min-width: 300px;
+        flex: 1 1;
     }
 }
 
+@media only screen and (max-width: 1420px) {
+
+    .container {
+        padding: 2rem 0;
+        width: 80%;
+    }
+
+    #projecten .project {
+        min-width: 350px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+
+    html {
+        scroll-padding-top: 0px;
+    }
+
+    main {
+        margin-top: 0px;
+    }
+
+    header {
+        flex-direction: column;
+        position: relative;
+        height: auto;
+        gap: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    #navLeft {
+        order: 1;
+        display: none;
+    }
+    
+    #navLeft ul {
+        padding: 0;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    #navRight ul {
+        gap: 1rem;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #navRight {
+        order: 2;
+        display: none;
+    }
+
+    header h1 {
+        order: 0;
+    }
+
+    #menuButton {
+        display: block;
+    }
+
+}
+
+@media only screen and (max-width: 820px) {
+
+    #projecten .projecten {
+        justify-content: center;
+    }
+
+}
+
 @media only screen and (max-width: 468px) {
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
     #projecten .project {
         min-width: 200px;
     }
 
     .container {
-        min-height: 500px;
+        /* min-height: 500px; */
+        padding: 2rem 0;
+        width: 90%;
     }
 
     #projecten a {
