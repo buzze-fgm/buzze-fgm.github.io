@@ -11,19 +11,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Text:wght@100..900&family=Exo:ital,wght@0,100..900;1,100..900&family=Red+Hat+Mono:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
     <link href="./resources/css/style.css" rel="stylesheet" type="text/css">
 </head>
-<body>
-    <header>
+<body class="cBlue">
+    <header class="bgBlue">
         <nav id="navLeft">
             <ul>
-                <li><a href="#">Start</a></li>
-                <li><a href="#about">About</a></li>
+                <li><a class="cRed" href="#">Start</a></li>
+                <li><a class="cRed" href="#about">About</a></li>
             </ul>
         </nav>
-        <h1>Fré's Portfolio</h1>
+        <h1 class="cLightGreen">Fré's Portfolio</h1>
         <nav id="navRight">
             <ul>
-                <li><a href="#projecten">Projects</a></li>
-                <li><a href="./contact.html">Contact</a></li>
+                <li><a class="cRed" href="#projecten">Projects</a></li>
+                <li><a class="cRed" href="./contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -31,21 +31,21 @@
     <main>
         <section id="about">
             <div class="container">
-                <!-- <h2>About me</h2> -->
-                <p>I am currently following the online course "Full-Stack Engineer" on <a href="https://www.codecademy.com" target="_blank">CodeCademy</a>. Before this, I have already completed the skill path "Build a Website with HTML, CSS, and GitHub Pages".</p>
+                <!-- <h2 class="cDarkGreen">About me</h2> -->
+                <p>I am currently following the online course "Full-Stack Engineer" on <a class="cRed" href="https://www.codecademy.com" target="_blank">CodeCademy</a>. Before this, I have already completed the skill path "Build a Website with HTML, CSS, and GitHub Pages".</p>
                 <p>Here you will find some the project exercises that form my portfolio.</p>
             </div>
         </section>
 
-        <section id="projecten">
+        <section id="projecten" class="bgYellow">
             <div id="howest" class="container">
-                <div class="projectTitle">
-                    <i class="bi bi-caret-down"></i>
-                    <h2>Projects Howest</h2>
+                <div id="howestTitle" class="projectTitle">
+                    <i class="bi"></i>
+                    <h2 class="cRed">Projects Howest</h2>
                 </div>
-                <ul class="projecten">
+                <ul id="howestProjects" class="projecten">
                     <li class="project">
-                        <a href="https://fre-goe.github.io/CyclingCompanions/" target="_blank"><h3>Cycling Companions</h3></a>
+                        <a href="https://fre-goe.github.io/CyclingCompanions/" target="_blank"><h3 class="cBlue">Cycling Companions</h3></a>
                         <div class="image">
                             <a href="https://fre-goe.github.io/CyclingCompanions/" target="_blank"><img src="./resources/images/cycling_companions.jpg"/></a>
                         </div>
@@ -53,35 +53,35 @@
                     </li>
                 </ul>
             </div>
-            <div id="codeCademy" class="container">
-                <div class="projectTitle">
-                    <i class="bi bi-caret-right"></i>
-                    <h2>Projects CodeCademy</h2>
+            <div id="codecademy" class="container">
+                <div id="codecademyTitle" class="projectTitle">
+                    <i class="bi"></i>
+                    <h2 class="cRed">Projects CodeCademy</h2>
                 </div>
-                <ul class="projecten">
+                <ul id="codecademyProjects" class="projecten">
                     <li class="project">
-                        <a href="https://fre-goe.github.io/CyclingCompanions/" target="_blank"><h3>Cycling Companions</h3></a>
+                        <a href="https://fre-goe.github.io/CyclingCompanions/" target="_blank"><h3 class="cBlue">Cycling Companions</h3></a>
                         <div class="image">
                             <a href="https://fre-goe.github.io/CyclingCompanions/" target="_blank"><img src="./resources/images/cycling_companions.jpg"/></a>
                         </div>
                         <p class="descPar">This is the description paragraph of the project.</p>
                     </li>
                     <li class="project">
-                        <a href="https://fre-goe.github.io/citytravel/" target="_blank"><h3>City Travel inc.</h3></a>
+                        <a href="https://fre-goe.github.io/citytravel/" target="_blank"><h3 class="cBlue">City Travel inc.</h3></a>
                         <div class="image">
                             <a href="https://fre-goe.github.io/citytravel/" target="_blank"><img src="./resources/images/city_travel.jpg"/></a>
                         </div>
                         <p class="descPar">This is the description paragraph of the project.</p>
                     </li>
                     <li class="project">
-                        <a href="https://fre-goe.github.io/colmar_academy/" target="_blank"><h3>Colmar Academy</h3></a>
+                        <a href="https://fre-goe.github.io/colmar_academy/" target="_blank"><h3 class="cBlue">Colmar Academy</h3></a>
                         <div class="image">
                             <a href="https://fre-goe.github.io/colmar_academy/" target="_blank"><img src="./resources/images/colmar_academy.jpg"/></a>
                         </div>
                         <p class="descPar">This is the description paragraph of the project.</p>
                     </li>
                     <li class="project">
-                        <a href="https://fre-goe.github.io/teacosy/" target="_blank"><h3>Tea Cosy</h3></a>
+                        <a href="https://fre-goe.github.io/teacosy/" target="_blank"><h3 class="cBlue">Tea Cosy</h3></a>
                         <div class="image">
                             <a href="https://fre-goe.github.io/teacosy/" target="_blank"><img src="./resources/images/tea_cosy.jpg"/></a>
                         </div>
@@ -95,7 +95,7 @@
 
     <footer>
         <p>© Copyright 2024</p>
-
+        <button class="lightTheme">color</button>
     </footer>
 </body>
 <script src="./main.js"></script>

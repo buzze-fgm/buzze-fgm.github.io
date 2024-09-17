@@ -4,17 +4,15 @@
 
 }
 
-
 html {
     background-color: #F2F2F2;
     scroll-padding-top: 6rem;
 }
 
 body {
-    color: black;
     font-family: "Red Hat Mono", sans-serif;
     font-size: 16px;
-    color: #5D6C8C;
+    /* color: #5D6C8C; */
     width: 100%;
     text-align: center;
 }
@@ -27,7 +25,7 @@ h1 {
     font-family: "Exo";
     font-size: 3rem;
     font-weight: 400;
-    color: #CCD96C;
+    /* color: #CCD96C; */
     padding: 1rem 0;
 }
 
@@ -35,7 +33,7 @@ h2 {
     font-family: "Big Shoulders Text";
     font-size: 2rem;
     font-weight: bold;
-    color: #CCD96C;
+    /* color: #CCD96C; */
     padding: 1rem 0;
 }
 
@@ -44,7 +42,7 @@ h3 {
     font-size: 1.5rem;
     font-weight: normal;
     padding: 0.5rem 0;
-    color:#5D6C8C;
+    /* color:#5D6C8C; */
 }
 
 h4 {
@@ -53,9 +51,13 @@ h4 {
     padding: 0.2rem 0;
 }
 
+ul {
+    list-style-type: none;
+}
+
 a {
     text-decoration: none;
-    color: #F2865E;
+    /* color: #F2865E; */
 }
 
 .container {
@@ -72,10 +74,40 @@ a {
 
 }
 
+/* Kleuren */
+
+.cBlue {
+    color: #5D6C8C;
+}
+
+.cLightGreen {
+    color: #CCD96C;
+}
+
+.cDarkGreen {
+    color: #bcc863;
+}
+
+.cYellow {
+    color: #F2E49B;
+}
+
+.cRed {
+    color: #F2865E;
+}
+
+.bgBlue {
+    background-color: #5D6C8C;
+}
+
+.bgYellow {
+    background-color: #F2E49B;
+}
+
 /* Header */
 
 header {
-    background-color: #5D6C8C;
+    /* background-color: #5D6C8C; */
     width: 100%;
     margin: 0 auto;
     text-align: center;
@@ -119,18 +151,25 @@ header nav a:hover {
 }
 
 #about h2 {
-    color:#bcc863
+    /* color:#bcc863 */
 }
 
 /* Contact */
 
 #contact {
-    background-color:#F2E49B;
+    /* background-color:#F2E49B; */
     height: 75vh;
+    align-content: center;
+}
+
+#contact .container {
+    border: 3px dashed #5D6C8C;
+    padding: 3rem 0;
+
 }
 
 #contact h2 {
-    color:#F2865E;
+    /* color:#F2865E; */
 }
 
 #contact p {
@@ -145,10 +184,14 @@ header nav a:hover {
 }
 
 #contact a {
-    color:#5D6C8C;
+    /* color:#5D6C8C; */
 }
 
-/* Projectern */
+/* Projecten */
+
+#howest {
+    /* display: none; */
+}
 
 .projectTitle {
     display: flex;
@@ -177,7 +220,7 @@ header nav a:hover {
 }
 
 #projecten {
-    background-color: #F2E49B;
+    /* background-color: #F2E49B; */
     width: 100%;
 }
 
@@ -188,10 +231,6 @@ header nav a:hover {
     flex-wrap: wrap;
     gap: 2rem;
     padding: 2rem 0;
-}
-
-#codeCademy .projecten {
-    display: none;
 }
 
 #projecten .project{
@@ -210,6 +249,11 @@ header nav a:hover {
     /* transition: all 200ms ease-in 10ms; */
 }
 
+#projecten .container {
+    min-height: 50px;
+
+}
+
 /* #projecten .image:hover {
     box-shadow: 0px 0px 25px #5D6C8C;
 } */
@@ -219,7 +263,7 @@ header nav a:hover {
 }
 
 #projecten h2 {
-    color: #F2865E;
+    /* color: #F2865E; */
 }
 
 /* #projecten a {
