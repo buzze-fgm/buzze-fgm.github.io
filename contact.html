@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fré's Portfolio</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Text:wght@100..900&family=Exo:ital,wght@0,100..900;1,100..900&family=Red+Hat+Mono:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+    <link href="./resources/css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+    <!-- Header with site title and navigation 
+     On smaller screens the navigation is hiddon behind a menu button -->
+
+    <header class="bgBlue">
+        <nav id="navLeft">
+            <ul>
+                <li><a class="cRed" href="./index.html">Start</a></li>
+                <li><a class="cRed" href="./index.html#about">About</a></li>
+            </ul>
+        </nav>
+        <h1 class="cLightGreen">Fré's Portfolio</h1>
+        <nav id="navRight">
+            <ul>
+                <li><a class="cRed" href="./index.html#projecten">Projects</a></li>
+                <li><a class="cRed" href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <i id="menuButton" class="bi bi-list cRed"></i>
+        <i id="menuX" class="bi bi-x-lg cRed"></i>
+    </header>
+
+    <!-- the main section contains the contact info -->
+
+    <main>
+        <section id="contact" class="bgYellow">
+            <div class="container">
+                <h2 class="cRed">Contact</h2>
+                <p><i class="bi bi-envelope-at-fill cBlue"></i><a class="cBlue" href="mailto:fgm@telenet.be">fgm@telenet.be</a></p>
+                <p><i class="bi bi-linkedin bi-x3 cBlue"></i><a class="cBlue" href="https://www.linkedin.com/in/frederic-goetinck-moret/" target="_blank">frederic-goetinck-moret</a></p>
+            </div>
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>© Copyright 2024</p>
+
+        <!-- This button gives the user a darker theme -->
+        <button class="cBlue bgYellow lightTheme">Change Colors</button>
+    </footer>
+</body>
+<script src="./resources/js/main.js"></script>
+</html>

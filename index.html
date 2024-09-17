@@ -1,59 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fré's Portfolio</title>
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Text:wght@100..900&family=Exo:ital,wght@0,100..900;1,100..900&family=Red+Hat+Mono:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
     <link href="./resources/css/style.css" rel="stylesheet" type="text/css">
 </head>
-<body>
-    <header>
-        <h1>Fré's Portfolio</h1>
 
+<body class="cBlue">
+
+    <!-- Header with site title and navigation 
+     On smaller screens the navigation is hiddon behind a menu button -->
+
+    <header class="bgBlue">
+        <nav id="navLeft">
+            <ul>
+                <li><a class="cRed" href="#">Start</a></li>
+                <li><a class="cRed" href="#about">About</a></li>
+            </ul>
+        </nav>
+        <h1 class="cLightGreen">Fré's Portfolio</h1>
+        <nav id="navRight">
+            <ul>
+                <li><a class="cRed" href="#projecten">Projects</a></li>
+                <li><a class="cRed" href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <i id="menuButton" class="bi bi-list cRed"></i>
+        <i id="menuX" class="bi bi-x-lg cRed"></i>
     </header>
 
+    <!-- main contains the about and projects sections -->
+
     <main>
+
+        <!-- About section -->
+
         <section id="about">
             <div class="container">
-                <!-- <h2>CodeCademy</h2> -->
-                <p>I am currently following the online course "Full-Stack Engineer" on <a href="https://www.codecademy.com" target="_blank">CodeCademy</a>. Before this, I have already completed the skill path "Build a Website with HTML, CSS, and GitHub Pages".</p>
-                <p>Here you will find some the project exercises that form my portfolio.</p>
+                <!-- <h2 class="cDarkGreen">About me</h2> -->
+                <p>Hello, I am Frédéric Goetinck-Moret</p>
+                <p>Currently, I am following the online course "Full-Stack Engineer" on <a class="cRed" href="https://www.codecademy.com" target="_blank">CodeCademy</a>. Before this, I have already completed the skill path "Build a Website with HTML, CSS, and GitHub Pages".</p>
+                <p>Here you will find some of the project exercises that form my portfolio.</p>
             </div>
         </section>
 
-        <section id="projecten">
-            <div class="container">
-                <h2>Projects CodeCademy</h2>
-                <ul class="projecten">
+        <!-- Projects section devided between howest and codecademy
+         by clicking on the title the projects colaps or unfold -->
+
+        <section id="projecten" class="bgYellow">
+            <div id="howest" class="container">
+                <div id="howestTitle" class="projectTitle">
+                    <i class="bi"></i>
+                    <h2 class="cRed">Projects Howest</h2>
+                </div>
+                <ul id="howestProjects" class="projecten">
                     <li class="project">
-                        <a href="https://fre-goe.github.io/CyclingCompanions/" target="_blank">Cycling Companions</a>
+                        <a href="https://fre-goe.github.io/CyclingCompanions/" target="_blank"><h3 class="cBlue">Cycling Companions</h3></a>
+                        <p class="descPar">This is the description paragraph of the project.</p>
                         <div class="image">
                             <a href="https://fre-goe.github.io/CyclingCompanions/" target="_blank"><img src="./resources/images/cycling_companions.jpg"/></a>
                         </div>
                     </li>
+                </ul>
+            </div>
+
+            <div id="codecademy" class="container">
+                <div id="codecademyTitle" class="projectTitle">
+                    <i class="bi"></i>
+                    <h2 class="cRed">Projects CodeCademy</h2>
+                </div>
+                <ul id="codecademyProjects" class="projecten">
                     <li class="project">
-                        <a href="https://fre-goe.github.io/citytravel/" target="_blank">City Travel inc.</a>
+                        <a href="https://fre-goe.github.io/CyclingCompanions/" target="_blank"><h3 class="cBlue">Cycling Companions</h3></a>
+                        <div class="image">
+                            <a href="https://fre-goe.github.io/CyclingCompanions/" target="_blank"><img src="./resources/images/cycling_companions.jpg"/></a>
+                        </div>
+                        <p class="descPar">This is the description paragraph of the project.</p>
+                    </li>
+                    <li class="project">
+                        <a href="https://fre-goe.github.io/citytravel/" target="_blank"><h3 class="cBlue">City Travel inc.</h3></a>
                         <div class="image">
                             <a href="https://fre-goe.github.io/citytravel/" target="_blank"><img src="./resources/images/city_travel.jpg"/></a>
                         </div>
-                        
+                        <p class="descPar">This is the description paragraph of the project.</p>
                     </li>
                     <li class="project">
-                        <a href="https://fre-goe.github.io/colmar_academy/" target="_blank">Colmar Academy</a>
+                        <a href="https://fre-goe.github.io/colmar_academy/" target="_blank"><h3 class="cBlue">Colmar Academy</h3></a>
                         <div class="image">
                             <a href="https://fre-goe.github.io/colmar_academy/" target="_blank"><img src="./resources/images/colmar_academy.jpg"/></a>
                         </div>
-                        
+                        <p class="descPar">This is the description paragraph of the project.</p>
                     </li>
                     <li class="project">
-                        <a href="https://fre-goe.github.io/teacosy/" target="_blank">Tea Cosy</a>
+                        <a href="https://fre-goe.github.io/teacosy/" target="_blank"><h3 class="cBlue">Tea Cosy</h3></a>
                         <div class="image">
                             <a href="https://fre-goe.github.io/teacosy/" target="_blank"><img src="./resources/images/tea_cosy.jpg"/></a>
                         </div>
+                        <p class="descPar">This is the description paragraph of the project.</p>
                     </li>
                 </ul>
             </div>
@@ -64,6 +114,10 @@
     <footer>
         <p>© Copyright 2024</p>
 
+        <!-- This button gives the user a darker theme -->
+        <button class="cBlue bgYellow lightTheme">Change Colors</button>
     </footer>
 </body>
+<script src="./resources/js/main.js"></script>
+<script src="./resources/js/projects.js"></script>
 </html>

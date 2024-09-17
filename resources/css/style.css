@@ -4,25 +4,26 @@
 
 }
 
-
 html {
     background-color: #F2F2F2;
+    scroll-padding-top: 6rem;
 }
 
 body {
-    color: black;
     font-family: "Red Hat Mono", sans-serif;
     font-size: 16px;
-    color: #5D6C8C;
     width: 100%;
     text-align: center;
+}
+
+main {
+    margin-top: 6rem;
 }
 
 h1 {
     font-family: "Exo";
     font-size: 3rem;
     font-weight: 400;
-    color: #CCD96C;
     padding: 1rem 0;
 }
 
@@ -30,20 +31,34 @@ h2 {
     font-family: "Big Shoulders Text";
     font-size: 2rem;
     font-weight: bold;
-    color: #CCD96C;
     padding: 1rem 0;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: normal;
+    padding: 0.5rem 0;
+}
+
+h4 {
+    font-size: 1.2rem;
+    font-weight: normal;
+    padding: 0.2rem 0;
+}
+
+ul {
+    list-style-type: none;
 }
 
 a {
     text-decoration: none;
-    color: #F2865E;
 }
 
 .container {
     width: 60%;
     max-width: 1200px;
     margin: 0 auto;
-    min-height: 200px;
+    min-height: 300px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -53,25 +68,138 @@ a {
 
 }
 
+/* Colors */
+
+.cBlue {
+    color: #5D6C8C;
+}
+
+.cLightGreen {
+    color: #CCD96C;
+}
+
+.cDarkGreen {
+    color: #bcc863;
+}
+
+.cYellow {
+    color: #F2E49B;
+}
+
+.cRed {
+    color: #F2865E;
+}
+
+.bgBlue {
+    background-color: #5D6C8C;
+}
+
+.bgYellow {
+    background-color: #F2E49B;
+}
+
 /* Header */
 
 header {
-    background-color: #5D6C8C;
     width: 100%;
     margin: 0 auto;
     text-align: center;
+    position: fixed;
+    top: 0px;
+    height: 6rem;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+header nav {
+    width: 15rem;
+}
+
+header nav ul{
+    display: flex;
+    gap: 2rem;
+}
+
+header nav a {
+    font-size: 1.4rem;
+    transition: 200ms;
+}
+
+header nav a:hover {
+    color:#F2E49B;
+}
+
+header i {
+    font-size: 3rem;
+    order: 0;
+}
+
+#navLeft ul{
+    justify-content: flex-end;
+}
+
+#navRight ul{
+    justify-content: flex-start;
+}
+
+#menuButton {
+    display: none;
+    cursor: pointer;
+}
+
+#menuX {
+    display: none;
+    cursor: pointer;
 }
 
 /* about */
 
-#about.container p {
+#about p {
     font-size: 1.1rem;
     line-height: 1.8rem;
 }
 
 
+/* Contact */
 
-/* Projectern */
+#contact {
+    height: 75vh;
+    align-content: center;
+}
+
+#contact .container {
+    border: 3px dashed #5D6C8C;
+    padding: 3rem 0;
+
+}
+
+#contact p {
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+#contact i {
+    font-size: 2rem;
+}
+
+/* Projecten */
+
+.projectTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding-right: 3rem;
+}
+
+.projectTitle:hover {
+    cursor: pointer;
+}
 
 .project {
     border: 0.5px solid black;
@@ -79,13 +207,22 @@ header {
 }
 
 .project:hover {
+    border: 0.5px solid #F2865E;
     position: relative;
     top: -5px;
 }
 
+.descPar {
+    padding: 1.5rem 0.7rem;
+}
+
 #projecten {
-    background-color: #F2E49B;
     width: 100%;
+}
+
+#projecten .container {
+    min-height: 50px;
+    padding-top: 1rem;
 }
 
 #projecten .projecten {
@@ -97,41 +234,26 @@ header {
     padding: 2rem 0;
 }
 
-
-#projecten .project{
+#projecten .project {
     list-style: none;
     min-width: 300px;
     flex: 0 1;
 }
 
-#projecten .image {
-    /* max-height: 300px; */
-    aspect-ratio: 3 / 2;
-    overflow: scroll;
-    margin-top: 1rem;
-    border-top: 0.5px solid #000000;
-    /* transition: all 200ms ease-in 10ms; */
-}
-
-/* #projecten .image:hover {
-    box-shadow: 0px 0px 25px #5D6C8C;
-} */
-
 #projecten .project img {
     width: 100%;
 }
 
-#projecten h2 {
-    color: #F2865E;
+#projecten .image {
+    aspect-ratio: 3 / 2;
+    overflow: scroll;
+    margin-top: 1rem;
+    border-top: 0.5px solid #000000;
+    border-bottom: 0.5px solid #000000;
 }
 
-#projecten a {
-    font-size: 1.5rem;
-    color: #5D6C8C;
-}
-
-#projecten .container {
-    padding-top: 1rem;
+#howest {
+    display: none;
 }
 
 /* Footer */
@@ -140,20 +262,134 @@ footer {
     height: 5rem;
     display: flex;
     align-items: flex-end;
-    justify-content: center;
+    justify-content:space-around;
+    margin-bottom: 2rem;
+}
+
+footer button {
+    padding: 1rem 2rem;
+    border: 0.5px solid #2c2c2c;
+    box-shadow: 1px 1px 2px black;
+    cursor: pointer;
+    transition: 100ms;
+}
+
+footer button:hover {
+    box-shadow: 2px 2px 5px black;
+    position: relative;
+    top: -1px;
+    left: -1px;
+}
+
+footer button:active {
+    box-shadow: 1px 1px 1px black;
+    top: 0px;
+    left: 0px;
+}
+
+@media only screen and (max-width: 1630px) {
+    
+    #projecten .project {
+        flex: 1 1;
+    }
+}
+
+@media only screen and (max-width: 1420px) {
+
+    .container {
+        padding: 2rem 0;
+        width: 80%;
+    }
+
+    #projecten .project {
+        min-width: 350px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+
+    html {
+        scroll-padding-top: 0px;
+    }
+
+    main {
+        margin-top: 0px;
+    }
+
+    header {
+        flex-direction: column;
+        position: relative;
+        height: auto;
+        gap: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    header h1 {
+        order: 0;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+    }    
+
+    #navLeft {
+        order: 1;
+        display: none;
+    }    
+    
+    #navRight {
+        order: 2;
+        display: none;
+    }   
+
+    #navLeft ul {
+        padding: 0;
+        justify-content: center;
+        gap: 1rem;
+    }    
+
+    #navRight ul {
+        gap: 1rem;
+    }    
+
+    #menuButton {
+        display: block;
+    }
+
+    #projecten .project {
+        min-width: 300px;
+    }
+
+
+}
+
+@media only screen and (max-width: 820px) {
+
+    #projecten .projecten {
+        justify-content: center;
+    }
+
 }
 
 @media only screen and (max-width: 468px) {
-    #projecten .project {
-        min-width: 150px;
+
+    h2 {
+        font-size: 1.5rem;
     }
 
     .container {
-        min-height: 300px;
+        /* min-height: 500px; */
+        padding: 2rem 0;
+        width: 90%;
     }
 
     #projecten a {
         font-size: 1rem;
     }
+
+    #projecten .project {
+        min-width: 200px;
+    }        
 
 }
