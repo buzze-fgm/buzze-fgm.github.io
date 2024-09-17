@@ -33,8 +33,10 @@ titleCodecademy.onclick = function () {
     changeIcon(titleCodecademy);
 };
 
+// Change theme with button
+
 function changeTheme() {
-    if (document.querySelector('button').className === "lightTheme") {
+    if (document.querySelector('button').className.includes("lightTheme")) {
         const colorsBlue = document.getElementsByClassName("cBlue");
         const colorsRed = document.getElementsByClassName("cRed");
         const bgsBlue = document.getElementsByClassName("bgBlue");
