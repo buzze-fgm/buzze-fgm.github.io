@@ -111,11 +111,27 @@ header nav a:hover {
 /* Contact */
 
 #contact {
-    background-color: rgba(204, 217, 108, 0.6);
+    background-color:#F2E49B;
+    height: 75vh;
 }
 
 #contact h2 {
-    color:#5D6C8C
+    color:#F2865E;
+}
+
+#contact p {
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+#contact i {
+    font-size: 2rem;
+}
+
+#contact a {
+    color:#5D6C8C;
 }
 
 /* Projectern */
