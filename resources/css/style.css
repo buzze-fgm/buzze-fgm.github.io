@@ -39,6 +39,20 @@ h2 {
     padding: 1rem 0;
 }
 
+h3 {
+    /* font-family: "Big Shoulders Text"; */
+    font-size: 1.5rem;
+    font-weight: normal;
+    padding: 0.5rem 0;
+    color:#5D6C8C;
+}
+
+h4 {
+    font-size: 1.2rem;
+    font-weight: normal;
+    padding: 0.2rem 0;
+}
+
 a {
     text-decoration: none;
     color: #F2865E;
@@ -142,8 +156,7 @@ header nav a:hover {
 }
 
 .project:hover {
-    position: relative;
-    top: -5px;
+    border: 0.5px solid #F2865E;
 }
 
 #projecten {
@@ -160,7 +173,6 @@ header nav a:hover {
     padding: 2rem 0;
 }
 
-
 #projecten .project{
     list-style: none;
     min-width: 300px;
@@ -176,6 +188,16 @@ header nav a:hover {
     /* transition: all 200ms ease-in 10ms; */
 }
 
+#projecten .description {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#projecten .description i {
+    font-size: 1.2rem;
+}
+
 /* #projecten .image:hover {
     box-shadow: 0px 0px 25px #5D6C8C;
 } */
@@ -188,10 +210,10 @@ header nav a:hover {
     color: #F2865E;
 }
 
-#projecten a {
+/* #projecten a {
     font-size: 1.5rem;
     color: #5D6C8C;
-}
+} */
 
 #projecten .container {
     padding-top: 1rem;
