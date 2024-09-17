@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,7 +12,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Text:wght@100..900&family=Exo:ital,wght@0,100..900;1,100..900&family=Red+Hat+Mono:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
     <link href="./resources/css/style.css" rel="stylesheet" type="text/css">
 </head>
+
 <body class="cBlue">
+
+    <!-- Header with site title and navigation 
+     On smaller screens the navigation is hiddon behind a menu button -->
+
     <header class="bgBlue">
         <nav id="navLeft">
             <ul>
@@ -30,7 +36,12 @@
         <i id="menuX" class="bi bi-x-lg cRed"></i>
     </header>
 
+    <!-- main contains the about and projects sections -->
+
     <main>
+
+        <!-- About section -->
+
         <section id="about">
             <div class="container">
                 <!-- <h2 class="cDarkGreen">About me</h2> -->
@@ -39,6 +50,9 @@
                 <p>Here you will find some of the project exercises that form my portfolio.</p>
             </div>
         </section>
+
+        <!-- Projects section devided between howest and codecademy
+         by clicking on the title the projects colaps or unfold -->
 
         <section id="projecten" class="bgYellow">
             <div id="howest" class="container">
@@ -49,13 +63,14 @@
                 <ul id="howestProjects" class="projecten">
                     <li class="project">
                         <a href="https://fre-goe.github.io/CyclingCompanions/" target="_blank"><h3 class="cBlue">Cycling Companions</h3></a>
+                        <p class="descPar">This is the description paragraph of the project.</p>
                         <div class="image">
                             <a href="https://fre-goe.github.io/CyclingCompanions/" target="_blank"><img src="./resources/images/cycling_companions.jpg"/></a>
                         </div>
-                        <p class="descPar">This is the description paragraph of the project.</p>
                     </li>
                 </ul>
             </div>
+
             <div id="codecademy" class="container">
                 <div id="codecademyTitle" class="projectTitle">
                     <i class="bi"></i>
@@ -98,9 +113,11 @@
 
     <footer>
         <p>© Copyright 2024</p>
+
+        <!-- This button gives the user a darker theme -->
         <button class="cBlue bgYellow lightTheme">Change Colors</button>
     </footer>
 </body>
-<script src="./main.js"></script>
-<script src="./projects.js"></script>
+<script src="./resources/js/main.js"></script>
+<script src="./resources/js/projects.js"></script>
 </html>

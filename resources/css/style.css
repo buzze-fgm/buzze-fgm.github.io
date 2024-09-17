@@ -12,7 +12,6 @@ html {
 body {
     font-family: "Red Hat Mono", sans-serif;
     font-size: 16px;
-    /* color: #5D6C8C; */
     width: 100%;
     text-align: center;
 }
@@ -25,7 +24,6 @@ h1 {
     font-family: "Exo";
     font-size: 3rem;
     font-weight: 400;
-    /* color: #CCD96C; */
     padding: 1rem 0;
 }
 
@@ -33,16 +31,13 @@ h2 {
     font-family: "Big Shoulders Text";
     font-size: 2rem;
     font-weight: bold;
-    /* color: #CCD96C; */
     padding: 1rem 0;
 }
 
 h3 {
-    /* font-family: "Big Shoulders Text"; */
     font-size: 1.5rem;
     font-weight: normal;
     padding: 0.5rem 0;
-    /* color:#5D6C8C; */
 }
 
 h4 {
@@ -57,7 +52,6 @@ ul {
 
 a {
     text-decoration: none;
-    /* color: #F2865E; */
 }
 
 .container {
@@ -74,7 +68,7 @@ a {
 
 }
 
-/* Kleuren */
+/* Colors */
 
 .cBlue {
     color: #5D6C8C;
@@ -107,7 +101,6 @@ a {
 /* Header */
 
 header {
-    /* background-color: #5D6C8C; */
     width: 100%;
     margin: 0 auto;
     text-align: center;
@@ -121,21 +114,13 @@ header {
     gap: 3rem;
 }
 
-header nav ul{
-    display: flex;
-    gap: 2rem;
-}
-
 header nav {
     width: 15rem;
 }
 
-#navLeft ul{
-    justify-content: flex-end;
-}
-
-#navRight ul{
-    justify-content: flex-start;
+header nav ul{
+    display: flex;
+    gap: 2rem;
 }
 
 header nav a {
@@ -150,6 +135,14 @@ header nav a:hover {
 header i {
     font-size: 3rem;
     order: 0;
+}
+
+#navLeft ul{
+    justify-content: flex-end;
+}
+
+#navRight ul{
+    justify-content: flex-start;
 }
 
 #menuButton {
@@ -169,14 +162,10 @@ header i {
     line-height: 1.8rem;
 }
 
-#about h2 {
-    /* color:#bcc863 */
-}
 
 /* Contact */
 
 #contact {
-    /* background-color:#F2E49B; */
     height: 75vh;
     align-content: center;
 }
@@ -185,10 +174,6 @@ header i {
     border: 3px dashed #5D6C8C;
     padding: 3rem 0;
 
-}
-
-#contact h2 {
-    /* color:#F2865E; */
 }
 
 #contact p {
@@ -202,15 +187,7 @@ header i {
     font-size: 2rem;
 }
 
-#contact a {
-    /* color:#5D6C8C; */
-}
-
 /* Projecten */
-
-#howest {
-    display: none;
-}
 
 .projectTitle {
     display: flex;
@@ -240,8 +217,12 @@ header i {
 }
 
 #projecten {
-    /* background-color: #F2E49B; */
     width: 100%;
+}
+
+#projecten .container {
+    min-height: 50px;
+    padding-top: 1rem;
 }
 
 #projecten .projecten {
@@ -253,46 +234,26 @@ header i {
     padding: 2rem 0;
 }
 
-#projecten .project{
+#projecten .project {
     list-style: none;
     min-width: 300px;
     flex: 0 1;
 }
 
+#projecten .project img {
+    width: 100%;
+}
+
 #projecten .image {
-    /* max-height: 300px; */
     aspect-ratio: 3 / 2;
     overflow: scroll;
     margin-top: 1rem;
     border-top: 0.5px solid #000000;
     border-bottom: 0.5px solid #000000;
-    /* transition: all 200ms ease-in 10ms; */
 }
 
-#projecten .container {
-    min-height: 50px;
-
-}
-
-/* #projecten .image:hover {
-    box-shadow: 0px 0px 25px #5D6C8C;
-} */
-
-#projecten .project img {
-    width: 100%;
-}
-
-#projecten h2 {
-    /* color: #F2865E; */
-}
-
-/* #projecten a {
-    font-size: 1.5rem;
-    color: #5D6C8C;
-} */
-
-#projecten .container {
-    padding-top: 1rem;
+#howest {
+    display: none;
 }
 
 /* Footer */
@@ -363,34 +324,34 @@ footer button:active {
         padding-bottom: 1rem;
     }
 
-    #navLeft {
-        order: 1;
-        display: none;
-    }
-    
-    #navLeft ul {
-        padding: 0;
-        justify-content: center;
-        gap: 1rem;
-    }
-
-    #navRight ul {
-        gap: 1rem;
+    header h1 {
+        order: 0;
     }
 
     nav ul {
         display: flex;
         flex-direction: column;
-    }
+    }    
 
+    #navLeft {
+        order: 1;
+        display: none;
+    }    
+    
     #navRight {
         order: 2;
         display: none;
-    }
+    }   
 
-    header h1 {
-        order: 0;
-    }
+    #navLeft ul {
+        padding: 0;
+        justify-content: center;
+        gap: 1rem;
+    }    
+
+    #navRight ul {
+        gap: 1rem;
+    }    
 
     #menuButton {
         display: block;
@@ -417,10 +378,6 @@ footer button:active {
         font-size: 1.5rem;
     }
 
-    #projecten .project {
-        min-width: 200px;
-    }
-
     .container {
         /* min-height: 500px; */
         padding: 2rem 0;
@@ -430,5 +387,9 @@ footer button:active {
     #projecten a {
         font-size: 1rem;
     }
+
+    #projecten .project {
+        min-width: 200px;
+    }        
 
 }

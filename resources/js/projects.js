@@ -1,3 +1,7 @@
+/* by clicking on the title of projects, 
+the section collapses or unfolds */
+
+
 let titleHowest = document.getElementById("howestTitle");
 let titleCodecademy = document.getElementById("codecademyTitle");
 let projectHowest = document.getElementById("howestProjects");
