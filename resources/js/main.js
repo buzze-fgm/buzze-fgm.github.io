@@ -11,7 +11,7 @@ function toDark() {
     const bgsYellow = document.getElementsByClassName("bgYellow");
 
     for (const colorBlue of colorsBlue) {
-        colorBlue.style.color= "#b7c4e1";
+        colorBlue.style.color= "#d7e0f5";
     }
     for (const colorRed of colorsRed) {
         colorRed.style.color= "#da7b58";
