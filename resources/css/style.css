@@ -124,6 +124,7 @@ header nav ul{
 }
 
 header nav a {
+    color:#F2865E;
     font-size: 1.4rem;
     transition: 200ms;
 }
