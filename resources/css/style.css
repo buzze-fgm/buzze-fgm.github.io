@@ -231,7 +231,7 @@ header i {
     /* width: 100%; */
     display: grid;
     justify-content: space-between;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     gap: 2rem;
     padding: 2rem 0;
     grid-template-columns: 1fr 1fr 1fr;
@@ -290,12 +290,12 @@ footer button:active {
     left: 0px;
 }
 
-@media only screen and (max-width: 1630px) {
+/* @media only screen and (max-width: 1630px) {
     
-    /* #projects .project {
+     #projects .project {
         flex: 1 1;
-    } */
-}
+    } 
+} */
 
 @media only screen and (max-width: 1420px) {
 
