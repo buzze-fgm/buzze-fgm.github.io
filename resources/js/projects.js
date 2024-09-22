@@ -9,7 +9,7 @@ let projectCodecademy = document.getElementById("codecademyProjects");
 
 projectHowest.style.display = "none";
 titleHowest.querySelector("i").classList.add('bi-caret-right');
-projectCodecademy.style.display = "flex";
+projectCodecademy.style.display = "grid";
 titleCodecademy.querySelector("i").classList.add('bi-caret-down');
 
 
@@ -21,7 +21,7 @@ function changeIcon(anchor) {
 
 titleHowest.onclick = function () {
     if (projectHowest.style.display === "none") {
-        projectHowest.style.display = "flex";
+        projectHowest.style.display = "grid";
     } else {
         projectHowest.style.display = "none";
     }
@@ -30,7 +30,7 @@ titleHowest.onclick = function () {
 
 titleCodecademy.onclick = function () {    
     if (projectCodecademy.style.display === "none") {
-        projectCodecademy.style.display = "flex";
+        projectCodecademy.style.display = "grid";
     } else {
         projectCodecademy.style.display = "none";
     }

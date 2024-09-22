@@ -129,7 +129,7 @@ header nav a {
 }
 
 header nav a:hover {
-    color:#F2E49B;
+    color: #CCD96C;
 }
 
 header i {
@@ -189,6 +189,8 @@ header i {
 
 /* Projecten */
 
+
+
 .projectTitle {
     display: flex;
     justify-content: center;
@@ -216,35 +218,36 @@ header i {
     padding: 1.5rem 0.7rem;
 }
 
-#projecten {
+#projects {
     width: 100%;
 }
 
-#projecten .container {
+#projects .container {
     min-height: 50px;
     padding-top: 1rem;
 }
 
-#projecten .projecten {
-    width: 100%;
-    display: flex;
+#projects .projects {
+    /* width: 100%; */
+    display: grid;
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 2rem;
     padding: 2rem 0;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
-#projecten .project {
+#projects .project {
     list-style: none;
-    min-width: 300px;
-    flex: 0 1;
+    /* min-width: 300px; */
+    /* flex: 0 1; */
 }
 
-#projecten .project img {
+#projects .project img {
     width: 100%;
 }
 
-#projecten .image {
+#projects .image {
     aspect-ratio: 3 / 2;
     overflow: scroll;
     margin-top: 1rem;
@@ -289,9 +292,9 @@ footer button:active {
 
 @media only screen and (max-width: 1630px) {
     
-    #projecten .project {
+    /* #projects .project {
         flex: 1 1;
-    }
+    } */
 }
 
 @media only screen and (max-width: 1420px) {
@@ -301,12 +304,9 @@ footer button:active {
         width: 80%;
     }
 
-    #projecten .project {
-        min-width: 350px;
-    }
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1080px) {
 
     html {
         scroll-padding-top: 0px;
@@ -357,18 +357,27 @@ footer button:active {
         display: block;
     }
 
-    #projecten .project {
-        min-width: 300px;
+    #projects .projects {
+        grid-template-columns: 1fr 1fr;
     }
+
+    /* #projects .project {
+        min-width: 300px;
+    } */
 
 
 }
 
-@media only screen and (max-width: 820px) {
+@media only screen and (max-width: 800px) {
 
-    #projecten .projecten {
+    /* #projects .projects {
         justify-content: center;
+    } */
+
+    #projects .projects {
+        grid-template-columns: 1fr;
     }
+
 
 }
 
@@ -384,12 +393,13 @@ footer button:active {
         width: 90%;
     }
 
-    #projecten a {
+    #projects a {
         font-size: 1rem;
     }
 
-    #projecten .project {
+    
+    /* #projects .project {
         min-width: 200px;
-    }        
+    }         */
 
 }
